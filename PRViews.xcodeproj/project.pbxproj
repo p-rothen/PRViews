@@ -18,6 +18,8 @@
 		EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C341E033BF20025B8F5 /* PRTextField.swift */; };
 		EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */; };
 		EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C381E033D710025B8F5 /* RoundedButton.swift */; };
+		EB6D6C3C1E0341110025B8F5 /* PRFakeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */; };
+		EB6D6C3D1E0341110025B8F5 /* PRFakeTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		EB6D6C341E033BF20025B8F5 /* PRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextField.swift; sourceTree = "<group>"; };
 		EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		EB6D6C381E033D710025B8F5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRFakeTextFieldView.swift; sourceTree = "<group>"; };
+		EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRFakeTextFieldView.xib; sourceTree = "<group>"; };
 		ECD552743D729C1E3BEEC7E2 /* Pods-PRViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViewsTests/Pods-PRViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,8 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
+				EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */,
+				EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */,
 				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
 				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */,
+				EB6D6C3D1E0341110025B8F5 /* PRFakeTextFieldView.xib in Resources */,
 				EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +340,7 @@
 				EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */,
 				EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */,
 				EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */,
+				EB6D6C3C1E0341110025B8F5 /* PRFakeTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
