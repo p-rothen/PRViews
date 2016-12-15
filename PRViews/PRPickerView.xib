@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PRPickerView" customModule="PRViews" customModuleProvider="target">
+            <connections>
+                <outlet property="textFieldNationality" destination="FNp-cy-s68" id="JfX-NB-XPf"/>
+                <outlet property="viewArrow" destination="hcp-iQ-81b" id="KuG-25-I3E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3I-aY-vn7">
+                    <rect key="frame" x="0.0" y="0.0" width="329" height="188"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nacionalidad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-cy-s68" customClass="PRTextField" customModule="PRViews" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="339" height="188"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FNp-cy-s68" firstAttribute="top" secondItem="r3I-aY-vn7" secondAttribute="top" id="5X3-So-OIe"/>
+                        <constraint firstAttribute="bottom" secondItem="FNp-cy-s68" secondAttribute="bottom" id="9Ep-vX-CPh"/>
+                        <constraint firstItem="FNp-cy-s68" firstAttribute="leading" secondItem="r3I-aY-vn7" secondAttribute="leading" id="Xut-vH-ncb"/>
+                        <constraint firstAttribute="trailing" secondItem="FNp-cy-s68" secondAttribute="trailing" constant="-10" id="c5n-wJ-eza"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcp-iQ-81b" userLabel="Icon">
+                    <rect key="frame" x="332" y="0.0" width="50" height="188"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drcloud-iphone-selector-icon" translatesAutoresizingMaskIntoConstraints="NO" id="kmS-ef-GQR">
+                            <rect key="frame" x="13" y="81" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Io3-Lc-xDK"/>
+                                <constraint firstAttribute="width" constant="25" id="ivO-VL-tWN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.74748474359999995" blue="0.68789213900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="kmS-ef-GQR" firstAttribute="centerX" secondItem="hcp-iQ-81b" secondAttribute="centerX" id="GBQ-Yi-JUX"/>
+                        <constraint firstAttribute="width" constant="50" id="i2l-tV-8NY"/>
+                        <constraint firstItem="kmS-ef-GQR" firstAttribute="centerY" secondItem="hcp-iQ-81b" secondAttribute="centerY" id="kQG-bg-5gn"/>
+                        <constraint firstAttribute="height" constant="30" id="xGC-IL-iGx"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xGC-IL-iGx"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="r3I-aY-vn7" secondAttribute="bottom" id="DmP-ee-5zK"/>
+                <constraint firstItem="r3I-aY-vn7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VZZ-4q-P1z"/>
+                <constraint firstItem="hcp-iQ-81b" firstAttribute="leading" secondItem="r3I-aY-vn7" secondAttribute="trailing" constant="3" id="VaD-KP-kv0"/>
+                <constraint firstAttribute="trailing" secondItem="hcp-iQ-81b" secondAttribute="trailing" id="gDm-Sa-H8S"/>
+                <constraint firstAttribute="bottom" secondItem="hcp-iQ-81b" secondAttribute="bottom" id="mbL-wV-doe"/>
+                <constraint firstItem="r3I-aY-vn7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v9h-gQ-4G4"/>
+                <constraint firstItem="hcp-iQ-81b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xhS-VH-6Sk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="drcloud-iphone-selector-icon" width="25" height="25"/>
+    </resources>
+</document>

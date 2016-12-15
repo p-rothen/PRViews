@@ -10,6 +10,9 @@
 		EB6D6C161E032B380025B8F5 /* PRViews.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6D6C151E032B380025B8F5 /* PRViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB6D6C1D1E032B380025B8F5 /* PRViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D6C121E032B380025B8F5 /* PRViews.framework */; };
 		EB6D6C221E032B380025B8F5 /* PRViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C211E032B380025B8F5 /* PRViewsTests.swift */; };
+		EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */; };
+		EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */; };
+		EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		EB6D6C1C1E032B380025B8F5 /* PRViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6D6C211E032B380025B8F5 /* PRViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRViewsTests.swift; sourceTree = "<group>"; };
 		EB6D6C231E032B380025B8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPickerView.swift; sourceTree = "<group>"; };
+		EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPickerView.xib; sourceTree = "<group>"; };
+		EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
+				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
+				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
+				EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */,
 				EB6D6C151E032B380025B8F5 /* PRViews.h */,
 				EB6D6C171E032B380025B8F5 /* Info.plist */,
 			);
@@ -177,6 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */,
+				EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,28 +322,33 @@
 		EB6D6C271E032B380025B8F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PRViews/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rothen.PRViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EB6D6C281E032B380025B8F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PRViews/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rothen.PRViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
