@@ -17,6 +17,7 @@
 		EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */; };
 		EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C341E033BF20025B8F5 /* PRTextField.swift */; };
 		EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */; };
+		EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C381E033D710025B8F5 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6D6C341E033BF20025B8F5 /* PRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextField.swift; sourceTree = "<group>"; };
 		EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		EB6D6C381E033D710025B8F5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		ECD552743D729C1E3BEEC7E2 /* Pods-PRViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViewsTests/Pods-PRViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
+				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
 				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
 				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
@@ -329,6 +332,7 @@
 				EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */,
 				EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */,
 				EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */,
+				EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
