@@ -15,6 +15,8 @@
 		EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */; };
 		EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */; };
 		EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */; };
+		EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C341E033BF20025B8F5 /* PRTextField.swift */; };
+		EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPickerView.swift; sourceTree = "<group>"; };
 		EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPickerView.xib; sourceTree = "<group>"; };
 		EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB6D6C341E033BF20025B8F5 /* PRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextField.swift; sourceTree = "<group>"; };
+		EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ECD552743D729C1E3BEEC7E2 /* Pods-PRViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViewsTests/Pods-PRViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,8 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
+				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
+				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
 				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
 				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
 				EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */,
@@ -321,6 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */,
+				EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */,
+				EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +522,7 @@
 				EB6D6C281E032B380025B8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB6D6C291E032B380025B8F5 /* Build configuration list for PBXNativeTarget "PRViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				EB6D6C2B1E032B380025B8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
