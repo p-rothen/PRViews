@@ -32,6 +32,12 @@ public protocol PRPickerViewDelegate{
         }
     }
     
+    @IBInspectable var fakePlaceholder: String? {
+        didSet {
+            self.textFieldNationality.placeholder = fakePlaceholder
+        }
+    }
+    
     override public init(frame: CGRect) {
         // 1. setup any properties here
         
@@ -65,7 +71,7 @@ public protocol PRPickerViewDelegate{
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapView)))
         view.layer.cornerRadius = 3
-        //ViewUtils.addLightShadow(self)
+        ViewUtils.addLightShadow(self)
         view.clipsToBounds = true
     }
     

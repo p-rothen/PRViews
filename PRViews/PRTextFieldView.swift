@@ -14,10 +14,11 @@ public protocol PRTextFieldViewDelegate{
 
 @IBDesignable public class PRTextFieldView: UIView {
     @IBOutlet weak var textFieldNationality: UITextField!
+    @IBOutlet weak var imageViewArrow: UIImageView!
     
     var view: UIView!
-    
     var nibName:String = "PRTextFieldView"
+    
     
     @IBInspectable var textFieldBackground: UIColor? {
         didSet {
@@ -29,6 +30,13 @@ public protocol PRTextFieldViewDelegate{
     @IBInspectable var fakePlaceholder: String? {
         didSet {
             self.textFieldNationality.text = fakePlaceholder
+        }
+    }
+    
+    @IBInspectable var placeholderText: String? {
+        didSet {
+            self.textFieldNationality.userInteractionEnabled = true
+            self.textFieldNationality.placeholder = placeholderText
         }
     }
     
