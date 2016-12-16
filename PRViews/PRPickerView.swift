@@ -1,9 +1,7 @@
 //
 //  HeaderView.swift
-//  Geyser
 //
 //  Created by Pedro on 05-04-16.
-//  Copyright © 2016 IQS. All rights reserved.
 //
 
 import UIKit

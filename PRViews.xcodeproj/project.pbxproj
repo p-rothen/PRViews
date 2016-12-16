@@ -119,6 +119,7 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
+				EBEF69611E04381F00D8F6FC /* Resources */,
 				EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */,
 				EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */,
 				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
@@ -126,7 +127,6 @@
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
 				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
 				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
-				EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */,
 				EB6D6C151E032B380025B8F5 /* PRViews.h */,
 				EB6D6C171E032B380025B8F5 /* Info.plist */,
 			);
@@ -140,6 +140,14 @@
 				EB6D6C231E032B380025B8F5 /* Info.plist */,
 			);
 			path = PRViewsTests;
+			sourceTree = "<group>";
+		};
+		EBEF69611E04381F00D8F6FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
