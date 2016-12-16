@@ -25,6 +25,13 @@ public protocol PRPickerViewDelegate{
         }
     }
     
+    @IBInspectable var textFieldBackground: UIColor? {
+        didSet {
+            self.textFieldNationality.layer.borderColor = textFieldBackground?.CGColor
+            self.textFieldNationality.backgroundColor = textFieldBackground
+        }
+    }
+    
     override public init(frame: CGRect) {
         // 1. setup any properties here
         

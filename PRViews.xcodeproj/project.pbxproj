@@ -119,13 +119,11 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
-				EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */,
-				EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */,
+				EBEF69671E0459AE00D8F6FC /* PRFakeTextFieldView */,
 				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
 				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
-				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
-				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
+				EBEF69661E04599700D8F6FC /* PRPickerView */,
 				EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */,
 				EB6D6C151E032B380025B8F5 /* PRViews.h */,
 				EB6D6C171E032B380025B8F5 /* Info.plist */,
@@ -140,6 +138,24 @@
 				EB6D6C231E032B380025B8F5 /* Info.plist */,
 			);
 			path = PRViewsTests;
+			sourceTree = "<group>";
+		};
+		EBEF69661E04599700D8F6FC /* PRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
+				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
+			);
+			name = PRPickerView;
+			sourceTree = "<group>";
+		};
+		EBEF69671E0459AE00D8F6FC /* PRFakeTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */,
+				EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */,
+			);
+			name = PRFakeTextFieldView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

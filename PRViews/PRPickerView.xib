@@ -35,7 +35,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcp-iQ-81b" userLabel="Icon">
                     <rect key="frame" x="332" y="0.0" width="50" height="188"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drcloud-iphone-selector-icon" translatesAutoresizingMaskIntoConstraints="NO" id="kmS-ef-GQR">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drcloud-iphone-selector-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="kmS-ef-GQR">
                             <rect key="frame" x="13" y="81" width="25" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="Io3-Lc-xDK"/>
@@ -73,6 +73,6 @@
         </view>
     </objects>
     <resources>
-        <image name="drcloud-iphone-selector-icon" width="25" height="25"/>
+        <image name="drcloud-iphone-selector-icon.png" width="75" height="75"/>
     </resources>
 </document>

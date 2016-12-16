@@ -9,11 +9,11 @@
 import UIKit
 //import CZPicker
 
-protocol PRFakeTextFieldViewDelegate{
+public protocol PRFakeTextFieldViewDelegate{
     func didTapView()
 }
 
-@IBDesignable class PRFakeTextFieldView: UIView {
+@IBDesignable public class PRFakeTextFieldView: UIView {
     @IBOutlet weak var textFieldNationality: UITextField!
     @IBOutlet weak var viewArrow: UIView!
     
@@ -21,7 +21,7 @@ protocol PRFakeTextFieldViewDelegate{
     
     var nibName:String = "PRFakeTextFieldView"
     
-    init(frame: CGRect, nibName: String) {
+    public init(frame: CGRect, nibName: String) {
         // 1. setup any properties here
         
         // 2. call super.init(frame:)
@@ -31,7 +31,7 @@ protocol PRFakeTextFieldViewDelegate{
         xibSetup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         // 1. setup any properties here
         
         // 2. call super.init(coder:)
