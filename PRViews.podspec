@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   s.dependency 'CZPicker'
  
   # 8
-  s.source_files = "PRViews.{swift}"
+  s.source_files = "PRViews/**/*.{swift}"
  
   # 9
-  s.resources = "PRViews.{png,jpeg,jpg,storyboard,xib}"
+  s.resources = "PRViews/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
