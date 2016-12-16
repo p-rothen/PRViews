@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		422993FBEE8D3F663928F873 /* Pods_PRViewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42A3F5D792946A73EC54D38 /* Pods_PRViewsTests.framework */; };
 		64FB3C43AF4DDCED5E1647F5 /* Pods_PRViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A2E9ACAF580BC52A5DC71 /* Pods_PRViews.framework */; };
+		EB0658AE1E0468560014BEAC /* PRTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0658AC1E0468560014BEAC /* PRTextFieldView.swift */; };
+		EB0658AF1E0468560014BEAC /* PRTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0658AD1E0468560014BEAC /* PRTextFieldView.xib */; };
 		EB6D6C161E032B380025B8F5 /* PRViews.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6D6C151E032B380025B8F5 /* PRViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB6D6C1D1E032B380025B8F5 /* PRViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D6C121E032B380025B8F5 /* PRViews.framework */; };
 		EB6D6C221E032B380025B8F5 /* PRViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C211E032B380025B8F5 /* PRViewsTests.swift */; };
@@ -17,8 +19,6 @@
 		EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C341E033BF20025B8F5 /* PRTextField.swift */; };
 		EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */; };
 		EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C381E033D710025B8F5 /* RoundedButton.swift */; };
-		EB6D6C3C1E0341110025B8F5 /* PRFakeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */; };
-		EB6D6C3D1E0341110025B8F5 /* PRFakeTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */; };
 		EBEF69651E04410A00D8F6FC /* drcloud-iphone-selector-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,8 @@
 		9E34D38769387964122BDA38 /* Pods-PRViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViews/Pods-PRViews.debug.xcconfig"; sourceTree = "<group>"; };
 		A42A3F5D792946A73EC54D38 /* Pods_PRViewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRViewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70A2E9ACAF580BC52A5DC71 /* Pods_PRViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0658AC1E0468560014BEAC /* PRTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextFieldView.swift; sourceTree = "<group>"; };
+		EB0658AD1E0468560014BEAC /* PRTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRTextFieldView.xib; sourceTree = "<group>"; };
 		EB6D6C121E032B380025B8F5 /* PRViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6D6C151E032B380025B8F5 /* PRViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRViews.h; sourceTree = "<group>"; };
 		EB6D6C171E032B380025B8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		EB6D6C341E033BF20025B8F5 /* PRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextField.swift; sourceTree = "<group>"; };
 		EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		EB6D6C381E033D710025B8F5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRFakeTextFieldView.swift; sourceTree = "<group>"; };
-		EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRFakeTextFieldView.xib; sourceTree = "<group>"; };
 		EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drcloud-iphone-selector-icon.png"; sourceTree = "<group>"; };
 		ECD552743D729C1E3BEEC7E2 /* Pods-PRViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViewsTests/Pods-PRViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +96,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB0658B01E0468740014BEAC /* PRTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				EB0658AC1E0468560014BEAC /* PRTextFieldView.swift */,
+				EB0658AD1E0468560014BEAC /* PRTextFieldView.xib */,
+			);
+			name = PRTextFieldView;
+			sourceTree = "<group>";
+		};
 		EB6D6C081E032B380025B8F5 = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +128,10 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
-				EBEF69671E0459AE00D8F6FC /* PRFakeTextFieldView */,
 				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
 				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
+				EB0658B01E0468740014BEAC /* PRTextFieldView */,
 				EBEF69661E04599700D8F6FC /* PRPickerView */,
 				EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */,
 				EB6D6C151E032B380025B8F5 /* PRViews.h */,
@@ -147,15 +156,6 @@
 				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
 			);
 			name = PRPickerView;
-			sourceTree = "<group>";
-		};
-		EBEF69671E0459AE00D8F6FC /* PRFakeTextFieldView */ = {
-			isa = PBXGroup;
-			children = (
-				EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */,
-				EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */,
-			);
-			name = PRFakeTextFieldView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6D6C3D1E0341110025B8F5 /* PRFakeTextFieldView.xib in Resources */,
 				EBEF69651E04410A00D8F6FC /* drcloud-iphone-selector-icon.png in Resources */,
+				EB0658AF1E0468560014BEAC /* PRTextFieldView.xib in Resources */,
 				EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,10 +353,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */,
+				EB0658AE1E0468560014BEAC /* PRTextFieldView.swift in Sources */,
 				EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */,
 				EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */,
 				EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */,
-				EB6D6C3C1E0341110025B8F5 /* PRFakeTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

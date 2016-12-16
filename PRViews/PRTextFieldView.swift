@@ -1,19 +1,18 @@
 //
-//  HeaderView.swift
-//  Geyser
+//  PRTextFieldView.swift
+//  Pods
 //
-//  Created by Pedro on 05-04-16.
-//  Copyright © 2016 IQS. All rights reserved.
+//  Created by Pedro on 16-12-16.
+//
 //
 
 import UIKit
-//import CZPicker
 
-public protocol PRFakeTextFieldViewDelegate{
+public protocol PRTextFieldViewDelegate{
     func didTapView()
 }
 
-@IBDesignable public class PRFakeTextFieldView: UIView {
+@IBDesignable public class PRTextFieldView: UIView {
     @IBOutlet weak var textFieldNationality: UITextField!
     @IBOutlet weak var viewArrow: UIView!
     
@@ -54,12 +53,10 @@ public protocol PRFakeTextFieldViewDelegate{
     }
     
     func loadViewFromNib() -> UIView {
-        //NSBundle.mainBundle()
-        let bundle = NSBundle.mainBundle()
+        let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: self.nibName, bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
         return view
     }
 }
-
