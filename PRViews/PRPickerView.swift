@@ -7,15 +7,15 @@
 import UIKit
 import CZPicker
 
-protocol PRPickerViewDelegate{
+public protocol PRPickerViewDelegate{
     func didTapView()
 }
 
-@IBDesignable class PRPickerView: UIView, CZPickerViewDelegate, CZPickerViewDataSource {
+@IBDesignable public class PRPickerView: UIView, CZPickerViewDelegate, CZPickerViewDataSource {
     var view:UIView!
     var nibName:String = "PRPickerView"
     var nationalities = ["Chilena", "Peruana", "Colombiana"]
-    var delegate:PRPickerViewDelegate?
+    public var delegate:PRPickerViewDelegate?
     @IBOutlet weak var textFieldNationality: UITextField!
     @IBOutlet weak var viewArrow: UIView!
     
@@ -25,7 +25,7 @@ protocol PRPickerViewDelegate{
         }
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         // 1. setup any properties here
         
         // 2. call super.init(frame:)
@@ -35,7 +35,7 @@ protocol PRPickerViewDelegate{
         xibSetup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         // 1. setup any properties here
         
         // 2. call super.init(coder:)
@@ -80,15 +80,15 @@ protocol PRPickerViewDelegate{
         picker.show()
     }
     
-    func numberOfRowsInPickerView(pickerView: CZPickerView!) -> Int {
+    public func numberOfRowsInPickerView(pickerView: CZPickerView!) -> Int {
         return self.nationalities.count
     }
     
-    func czpickerView(pickerView: CZPickerView!, titleForRow row: Int) -> String! {
+    public func czpickerView(pickerView: CZPickerView!, titleForRow row: Int) -> String! {
         return self.nationalities[row]
     }
     
-    func czpickerView(pickerView: CZPickerView!, didConfirmWithItemAtRow row: Int) {
+    public func czpickerView(pickerView: CZPickerView!, didConfirmWithItemAtRow row: Int) {
         self.textFieldNationality.text = self.nationalities[row]
     }
 }
