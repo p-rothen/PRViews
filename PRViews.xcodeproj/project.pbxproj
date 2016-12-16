@@ -14,12 +14,12 @@
 		EB6D6C221E032B380025B8F5 /* PRViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C211E032B380025B8F5 /* PRViewsTests.swift */; };
 		EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */; };
 		EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */; };
-		EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */; };
 		EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C341E033BF20025B8F5 /* PRTextField.swift */; };
 		EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */; };
 		EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C381E033D710025B8F5 /* RoundedButton.swift */; };
 		EB6D6C3C1E0341110025B8F5 /* PRFakeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */; };
 		EB6D6C3D1E0341110025B8F5 /* PRFakeTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */; };
+		EBEF69651E04410A00D8F6FC /* drcloud-iphone-selector-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +46,12 @@
 		EB6D6C231E032B380025B8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPickerView.swift; sourceTree = "<group>"; };
 		EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPickerView.xib; sourceTree = "<group>"; };
-		EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6D6C341E033BF20025B8F5 /* PRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextField.swift; sourceTree = "<group>"; };
 		EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		EB6D6C381E033D710025B8F5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRFakeTextFieldView.swift; sourceTree = "<group>"; };
 		EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRFakeTextFieldView.xib; sourceTree = "<group>"; };
+		EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drcloud-iphone-selector-icon.png"; sourceTree = "<group>"; };
 		ECD552743D729C1E3BEEC7E2 /* Pods-PRViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViewsTests/Pods-PRViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +119,6 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
-				EBEF69611E04381F00D8F6FC /* Resources */,
 				EB6D6C3A1E0341110025B8F5 /* PRFakeTextFieldView.swift */,
 				EB6D6C3B1E0341110025B8F5 /* PRFakeTextFieldView.xib */,
 				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
@@ -127,6 +126,7 @@
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
 				EB6D6C2C1E032B4F0025B8F5 /* PRPickerView.swift */,
 				EB6D6C2D1E032B4F0025B8F5 /* PRPickerView.xib */,
+				EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */,
 				EB6D6C151E032B380025B8F5 /* PRViews.h */,
 				EB6D6C171E032B380025B8F5 /* Info.plist */,
 			);
@@ -140,14 +140,6 @@
 				EB6D6C231E032B380025B8F5 /* Info.plist */,
 			);
 			path = PRViewsTests;
-			sourceTree = "<group>";
-		};
-		EBEF69611E04381F00D8F6FC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				EB6D6C2E1E032B4F0025B8F5 /* Assets.xcassets */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6D6C311E032B4F0025B8F5 /* Assets.xcassets in Resources */,
 				EB6D6C3D1E0341110025B8F5 /* PRFakeTextFieldView.xib in Resources */,
+				EBEF69651E04410A00D8F6FC /* drcloud-iphone-selector-icon.png in Resources */,
 				EB6D6C301E032B4F0025B8F5 /* PRPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

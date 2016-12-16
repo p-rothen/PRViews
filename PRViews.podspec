@@ -31,5 +31,5 @@ Pod::Spec.new do |s|
  
   # 9
   s.resources = "PRViews/**/*.{png,jpeg,jpg,storyboard,xib}"
-  s.resources = "PRViews/Resources/Assets.xcassets"
+  #s.resources = "PRViews/*.xcassets"
 end
