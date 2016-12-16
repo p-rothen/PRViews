@@ -12,6 +12,8 @@ public class PRTextField: UITextField {
     let padding = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8);
     let customBackgroundColor = UIColor(red:0.96, green:0.96, blue:0.98, alpha:1.0)
     
+    let customTextColor = UIColor(red:0.29, green:0.29, blue:0.29, alpha:1.0)
+    
      public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -20,8 +22,8 @@ public class PRTextField: UITextField {
         self.layer.cornerRadius = 3;
         self.layer.borderColor = self.customBackgroundColor.CGColor
         self.backgroundColor = self.customBackgroundColor
-        self.textColor = UIColor.grayColor()
-        self.tintColor = UIColor.blackColor()
+        self.textColor = customTextColor
+        self.tintColor = customTextColor
         ViewUtils.addLightShadow(self)
         
         NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 50).active = true

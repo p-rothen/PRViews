@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PRTextFieldView" customModule="PRViews">
             <connections>
-                <outlet property="textFieldNationality" destination="nal-fL-1Xy" id="bJg-X1-doT"/>
+                <outlet property="textFieldNationality" destination="nal-fL-1Xy" id="5Pn-EG-RDS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,35 +14,38 @@
             <rect key="frame" x="0.0" y="0.0" width="382" height="188"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9FC-Wz-CY0">
-                    <rect key="frame" x="0.0" y="0.0" width="329" height="188"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FC-Wz-CY0">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="188"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nacionalidad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nal-fL-1Xy" customClass="PRTextField" customModule="PRViews">
-                            <rect key="frame" x="0.0" y="0.0" width="339" height="188"/>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nacionalidad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nal-fL-1Xy" customClass="PRTextField" customModule="PRViews">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="188"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drcloud-iphone-chevron-right.png" translatesAutoresizingMaskIntoConstraints="NO" id="bPS-db-bD1">
+                            <rect key="frame" x="334" y="73.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="THO-k5-zVR"/>
+                                <constraint firstAttribute="height" constant="40" id="h4E-s0-7f1"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="bPS-db-bD1" firstAttribute="centerY" secondItem="nal-fL-1Xy" secondAttribute="centerY" id="O0b-9E-4Lz"/>
                         <constraint firstAttribute="bottom" secondItem="nal-fL-1Xy" secondAttribute="bottom" id="cdr-Og-G2T"/>
                         <constraint firstItem="nal-fL-1Xy" firstAttribute="top" secondItem="9FC-Wz-CY0" secondAttribute="top" id="phd-ht-hgR"/>
                         <constraint firstItem="nal-fL-1Xy" firstAttribute="leading" secondItem="9FC-Wz-CY0" secondAttribute="leading" id="rCM-L9-7h3"/>
                         <constraint firstAttribute="trailing" secondItem="nal-fL-1Xy" secondAttribute="trailing" constant="-10" id="sg9-0U-fm5"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="drcloud-iphone-selector-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="bPS-db-bD1">
-                    <rect key="frame" x="349" y="81" width="25" height="25"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="25" id="THO-k5-zVR"/>
-                        <constraint firstAttribute="height" constant="25" id="h4E-s0-7f1"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="9FC-Wz-CY0" secondAttribute="bottom" id="3Sb-N9-IKz"/>
                 <constraint firstItem="9FC-Wz-CY0" firstAttribute="leading" secondItem="Lbg-8N-4ox" secondAttribute="leading" id="Aw5-CM-lAE"/>
+                <constraint firstAttribute="trailing" secondItem="bPS-db-bD1" secondAttribute="trailing" constant="8" id="Uox-Ma-hMr"/>
+                <constraint firstAttribute="trailing" secondItem="nal-fL-1Xy" secondAttribute="trailing" id="XVD-aS-sda"/>
                 <constraint firstItem="9FC-Wz-CY0" firstAttribute="top" secondItem="Lbg-8N-4ox" secondAttribute="top" id="kal-Mi-48K"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -51,6 +54,6 @@
         </view>
     </objects>
     <resources>
-        <image name="drcloud-iphone-selector-icon.png" width="75" height="75"/>
+        <image name="drcloud-iphone-chevron-right.png" width="120" height="120"/>
     </resources>
 </document>

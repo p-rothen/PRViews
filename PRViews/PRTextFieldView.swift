@@ -14,13 +14,25 @@ public protocol PRTextFieldViewDelegate{
 
 @IBDesignable public class PRTextFieldView: UIView {
     @IBOutlet weak var textFieldNationality: UITextField!
-    @IBOutlet weak var viewArrow: UIView!
     
     var view: UIView!
     
-    var nibName:String = "PRFakeTextFieldView"
+    var nibName:String = "PRTextFieldView"
     
-    public init(frame: CGRect, nibName: String) {
+    @IBInspectable var textFieldBackground: UIColor? {
+        didSet {
+            self.textFieldNationality.layer.borderColor = textFieldBackground?.CGColor
+            self.textFieldNationality.backgroundColor = textFieldBackground
+        }
+    }
+    
+    @IBInspectable var fakePlaceholder: String? {
+        didSet {
+            self.textFieldNationality.text = fakePlaceholder
+        }
+    }
+    
+    override public init(frame: CGRect) {
         // 1. setup any properties here
         
         // 2. call super.init(frame:)
