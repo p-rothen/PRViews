@@ -15,6 +15,7 @@ public protocol PRTextFieldViewDelegate{
 @IBDesignable public class PRTextFieldView: UIView {
     @IBOutlet weak var textFieldNationality: UITextField!
     @IBOutlet weak var imageViewArrow: UIImageView!
+    public var tapHanler: (Void -> Void)?
     
     var view: UIView!
     var nibName:String = "PRTextFieldView"
@@ -37,6 +38,12 @@ public protocol PRTextFieldViewDelegate{
         didSet {
             self.textFieldNationality.userInteractionEnabled = true
             self.textFieldNationality.placeholder = placeholderText
+        }
+    }
+    
+    @IBInspectable var hiddenArrow:Bool = true {
+        didSet {
+            self.imageViewArrow.hidden = hiddenArrow
         }
     }
     
@@ -63,6 +70,8 @@ public protocol PRTextFieldViewDelegate{
     func xibSetup() {
         self.view = loadViewFromNib()
         
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapView)))
+        
         // use bounds not frame or it'll be offset
         view.frame = bounds
         
@@ -70,6 +79,10 @@ public protocol PRTextFieldViewDelegate{
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
+    }
+    
+    func didTapView() {
+        self.tapHanler?()
     }
     
     func loadViewFromNib() -> UIView {
