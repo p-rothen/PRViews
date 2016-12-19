@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PRPickerView" customModule="PRViews" customModuleProvider="target">
             <connections>
-                <outlet property="textFieldNationality" destination="FNp-cy-s68" id="JfX-NB-XPf"/>
+                <outlet property="textField" destination="FNp-cy-s68" id="agM-7s-hTI"/>
                 <outlet property="viewArrow" destination="hcp-iQ-81b" id="KuG-25-I3E"/>
             </connections>
         </placeholder>

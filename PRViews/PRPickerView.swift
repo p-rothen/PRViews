@@ -12,11 +12,14 @@ public protocol PRPickerViewDelegate{
 }
 
 @IBDesignable public class PRPickerView: DesignableView, CZPickerViewDelegate, CZPickerViewDataSource {
+    
+    @IBOutlet public weak var textField: UITextField!
+    @IBOutlet weak var viewArrow: UIView!
+    
     var nibName:String = "PRPickerView"
     var nationalities = ["Chilena", "Peruana", "Colombiana"]
     public var delegate:PRPickerViewDelegate?
-    @IBOutlet weak var textFieldNationality: UITextField!
-    @IBOutlet weak var viewArrow: UIView!
+    public var tapHandler: (Void -> Void)?
     
     @IBInspectable var arrowBackground: UIColor? {
         didSet {
@@ -26,14 +29,14 @@ public protocol PRPickerViewDelegate{
     
     @IBInspectable var textFieldBackground: UIColor? {
         didSet {
-            self.textFieldNationality.layer.borderColor = textFieldBackground?.CGColor
-            self.textFieldNationality.backgroundColor = textFieldBackground
+            self.textField.layer.borderColor = textFieldBackground?.CGColor
+            self.textField.backgroundColor = textFieldBackground
         }
     }
     
     @IBInspectable var fakePlaceholder: String? {
         didSet {
-            self.textFieldNationality.placeholder = fakePlaceholder
+            self.textField.placeholder = fakePlaceholder
         }
     }
     
@@ -55,12 +58,14 @@ public protocol PRPickerViewDelegate{
     }
     
     func didTapView() {
-        print("xdxd")
-        let picker = CZPickerView(headerTitle: "Nacionalidad", cancelButtonTitle: "Cancelar", confirmButtonTitle: "Seleccionar")
-        picker.delegate = self
-        picker.dataSource = self
-        picker.needFooterView = true
-        picker.show()
+//        print("xdxd")
+//        let picker = CZPickerView(headerTitle: "Nacionalidad", cancelButtonTitle: "Cancelar", confirmButtonTitle: "Seleccionar")
+//        picker.delegate = self
+//        picker.dataSource = self
+//        picker.needFooterView = true
+//        picker.show()
+        
+        self.tapHandler?()
     }
     
     public func numberOfRowsInPickerView(pickerView: CZPickerView!) -> Int {
@@ -72,7 +77,7 @@ public protocol PRPickerViewDelegate{
     }
     
     public func czpickerView(pickerView: CZPickerView!, didConfirmWithItemAtRow row: Int) {
-        self.textFieldNationality.text = self.nationalities[row]
+        self.textField.text = self.nationalities[row]
     }
 }
 
