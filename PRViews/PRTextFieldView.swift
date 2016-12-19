@@ -13,7 +13,7 @@ public protocol PRTextFieldViewDelegate{
 }
 
 @IBDesignable public class PRTextFieldView: UIView {
-    @IBOutlet weak var textFieldNationality: UITextField!
+    @IBOutlet public weak var textField: UITextField!
     @IBOutlet weak var imageViewArrow: UIImageView!
     public var tapHanler: (Void -> Void)?
     
@@ -23,25 +23,25 @@ public protocol PRTextFieldViewDelegate{
     
     @IBInspectable var textFieldBackground: UIColor? {
         didSet {
-            self.textFieldNationality.layer.borderColor = textFieldBackground?.CGColor
-            self.textFieldNationality.backgroundColor = textFieldBackground
+            self.textField.layer.borderColor = textFieldBackground?.CGColor
+            self.textField.backgroundColor = textFieldBackground
         }
     }
     
     @IBInspectable var fakePlaceholder: String? {
         didSet {
-            self.textFieldNationality.text = fakePlaceholder
+            self.textField.text = fakePlaceholder
         }
     }
     
     @IBInspectable var placeholderText: String? {
         didSet {
-            self.textFieldNationality.userInteractionEnabled = true
-            self.textFieldNationality.placeholder = placeholderText
+            self.textField.userInteractionEnabled = true
+            self.textField.placeholder = placeholderText
         }
     }
     
-    @IBInspectable var hiddenArrow:Bool = true {
+    @IBInspectable var hiddenArrow:Bool = false {
         didSet {
             self.imageViewArrow.hidden = hiddenArrow
         }

@@ -26,7 +26,9 @@ public class PRTextField: UITextField {
         self.tintColor = customTextColor
         ViewUtils.addLightShadow(self)
         
-        NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 50).active = true
+        let constraintHeight = NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 50)
+        constraintHeight.priority = 999
+        constraintHeight.active = true
     }
     
     public override func textRectForBounds(bounds: CGRect) -> CGRect {
