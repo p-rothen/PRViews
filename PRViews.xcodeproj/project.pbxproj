@@ -20,6 +20,7 @@
 		EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */; };
 		EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C381E033D710025B8F5 /* RoundedButton.swift */; };
 		EB8ED8451E047409004C1843 /* drcloud-iphone-chevron-right.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8ED8441E047409004C1843 /* drcloud-iphone-chevron-right.png */; };
+		EBD64B251E081A4000771414 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD64B241E081A4000771414 /* DesignableView.swift */; };
 		EBEF69651E04410A00D8F6FC /* drcloud-iphone-selector-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		EB6D6C381E033D710025B8F5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		EB8ED8441E047409004C1843 /* drcloud-iphone-chevron-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drcloud-iphone-chevron-right.png"; sourceTree = "<group>"; };
+		EBD64B241E081A4000771414 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drcloud-iphone-selector-icon.png"; sourceTree = "<group>"; };
 		ECD552743D729C1E3BEEC7E2 /* Pods-PRViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRViewsTests/Pods-PRViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,11 +132,9 @@
 		EB6D6C141E032B380025B8F5 /* PRViews */ = {
 			isa = PBXGroup;
 			children = (
-				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
-				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
-				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
-				EB0658B01E0468740014BEAC /* PRTextFieldView */,
-				EBEF69661E04599700D8F6FC /* PRPickerView */,
+				EBD64B261E081A4600771414 /* Core */,
+				EBD64B281E081A6300771414 /* Views */,
+				EBD64B271E081A5300771414 /* Utils */,
 				EBEF69641E04410A00D8F6FC /* drcloud-iphone-selector-icon.png */,
 				EB8ED8441E047409004C1843 /* drcloud-iphone-chevron-right.png */,
 				EB6D6C151E032B380025B8F5 /* PRViews.h */,
@@ -150,6 +150,33 @@
 				EB6D6C231E032B380025B8F5 /* Info.plist */,
 			);
 			path = PRViewsTests;
+			sourceTree = "<group>";
+		};
+		EBD64B261E081A4600771414 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EBD64B241E081A4000771414 /* DesignableView.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		EBD64B271E081A5300771414 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6C361E033C0A0025B8F5 /* ViewUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		EBD64B281E081A6300771414 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB0658B01E0468740014BEAC /* PRTextFieldView */,
+				EBEF69661E04599700D8F6FC /* PRPickerView */,
+				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
+				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		EBEF69661E04599700D8F6FC /* PRPickerView */ = {
@@ -358,6 +385,7 @@
 			files = (
 				EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */,
 				EB0658AE1E0468560014BEAC /* PRTextFieldView.swift in Sources */,
+				EBD64B251E081A4000771414 /* DesignableView.swift in Sources */,
 				EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */,
 				EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */,
 				EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */,

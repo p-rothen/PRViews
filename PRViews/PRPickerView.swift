@@ -11,8 +11,7 @@ public protocol PRPickerViewDelegate{
     func didTapView()
 }
 
-@IBDesignable public class PRPickerView: UIView, CZPickerViewDelegate, CZPickerViewDataSource {
-    var view:UIView!
+@IBDesignable public class PRPickerView: DesignableView, CZPickerViewDelegate, CZPickerViewDataSource {
     var nibName:String = "PRPickerView"
     var nationalities = ["Chilena", "Peruana", "Colombiana"]
     public var delegate:PRPickerViewDelegate?
@@ -39,48 +38,20 @@ public protocol PRPickerViewDelegate{
     }
     
     override public init(frame: CGRect) {
-        // 1. setup any properties here
-        
-        // 2. call super.init(frame:)
         super.init(frame: frame)
-        
-        // 3. Setup view from .xib file
-        xibSetup()
+        self.setup()
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        // 1. setup any properties here
-        
-        // 2. call super.init(coder:)
         super.init(coder: aDecoder)
-        
-        // 3. Setup view from .xib file
-        xibSetup()
+        self.setup()
     }
     
-    func xibSetup() {
-        view = loadViewFromNib()
-        
-        // use bounds not frame or it'll be offset
-        view.frame = bounds
-        
-        // Make the view stretch with containing view
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-        // Adding custom subview on top of our view (over any custom drawing > see note below)
-        addSubview(view)
-        
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapView)))
-        view.layer.cornerRadius = 3
+    func setup() {
+        xibSetup(self.nibName)
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapView)))
+        self.view.layer.cornerRadius = 3
         ViewUtils.addLightShadow(self)
-        view.clipsToBounds = true
-    }
-    
-    func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: nibName, bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        
-        return view
     }
     
     func didTapView() {
