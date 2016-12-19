@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewUtils {
-    static func addLightShadow(view: UIView) {
+public class ViewUtils {
+    public static func addLightShadow(view: UIView) {
         view.layer.shadowOpacity = 0.2;
         view.layer.shadowRadius = 1;
         view.layer.shadowColor = UIColor.blackColor().CGColor;

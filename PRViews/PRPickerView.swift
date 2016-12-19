@@ -48,7 +48,7 @@ public protocol PRPickerViewDelegate{
     }
     
     func setup() {
-        xibSetup(self.nibName)
+        super.xibSetup(self.nibName)
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapView)))
         self.view.layer.cornerRadius = 3
         ViewUtils.addLightShadow(self)
