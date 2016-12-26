@@ -8,8 +8,8 @@
 
 import UIKit
 
-class RoundedButton : UIButton {
-    required init?(coder aDecoder: NSCoder) {
+public class RoundedButton : UIButton {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 3
         
