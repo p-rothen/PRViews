@@ -9,12 +9,20 @@
 import UIKit
 
 public class RoundedButton : UIButton {
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setup()
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.setup()
+    }
+    
+    func setup() {
         self.layer.cornerRadius = 3
-        
         self.titleLabel?.font = UIFont.boldSystemFontOfSize(15)
-        
         self.layer.shadowOpacity = 0.4;
         self.layer.shadowRadius = 1;
         self.layer.shadowColor = UIColor.blackColor().CGColor;
