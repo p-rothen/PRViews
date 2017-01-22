@@ -11,6 +11,7 @@
 		64FB3C43AF4DDCED5E1647F5 /* Pods_PRViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A2E9ACAF580BC52A5DC71 /* Pods_PRViews.framework */; };
 		EB0658AE1E0468560014BEAC /* PRTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0658AC1E0468560014BEAC /* PRTextFieldView.swift */; };
 		EB0658AF1E0468560014BEAC /* PRTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0658AD1E0468560014BEAC /* PRTextFieldView.xib */; };
+		EB5A29FE1E351C7D00E198DC /* DotsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5A29FD1E351C7D00E198DC /* DotsMenu.swift */; };
 		EB6D6C161E032B380025B8F5 /* PRViews.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6D6C151E032B380025B8F5 /* PRViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB6D6C1D1E032B380025B8F5 /* PRViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D6C121E032B380025B8F5 /* PRViews.framework */; };
 		EB6D6C221E032B380025B8F5 /* PRViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6C211E032B380025B8F5 /* PRViewsTests.swift */; };
@@ -42,6 +43,7 @@
 		B70A2E9ACAF580BC52A5DC71 /* Pods_PRViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0658AC1E0468560014BEAC /* PRTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTextFieldView.swift; sourceTree = "<group>"; };
 		EB0658AD1E0468560014BEAC /* PRTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRTextFieldView.xib; sourceTree = "<group>"; };
+		EB5A29FD1E351C7D00E198DC /* DotsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsMenu.swift; sourceTree = "<group>"; };
 		EB6D6C121E032B380025B8F5 /* PRViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6D6C151E032B380025B8F5 /* PRViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRViews.h; sourceTree = "<group>"; };
 		EB6D6C171E032B380025B8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				EBEF69661E04599700D8F6FC /* PRPickerView */,
 				EB6D6C381E033D710025B8F5 /* RoundedButton.swift */,
 				EB6D6C341E033BF20025B8F5 /* PRTextField.swift */,
+				EB5A29FD1E351C7D00E198DC /* DotsMenu.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				EB6D6C2F1E032B4F0025B8F5 /* PRPickerView.swift in Sources */,
 				EB0658AE1E0468560014BEAC /* PRTextFieldView.swift in Sources */,
 				EBD64B251E081A4000771414 /* DesignableView.swift in Sources */,
+				EB5A29FE1E351C7D00E198DC /* DotsMenu.swift in Sources */,
 				EB6D6C371E033C0A0025B8F5 /* ViewUtils.swift in Sources */,
 				EB6D6C351E033BF20025B8F5 /* PRTextField.swift in Sources */,
 				EB6D6C391E033D710025B8F5 /* RoundedButton.swift in Sources */,
