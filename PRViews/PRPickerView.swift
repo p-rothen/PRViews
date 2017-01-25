@@ -16,17 +16,6 @@ public protocol PRPickerViewDelegate{
     @IBOutlet public weak var textField: UITextField!
     @IBOutlet weak var viewArrow: UIView!
     
-    var nibName:String = "PRPickerView"
-    var nationalities = ["Chilena", "Peruana", "Colombiana"]
-    public var delegate:PRPickerViewDelegate?
-    public var tapHandler: (Void -> Void)?
-    
-    @IBInspectable var arrowBackground: UIColor? {
-        didSet {
-            self.viewArrow.backgroundColor = arrowBackground
-        }
-    }
-    
     @IBInspectable var textFieldBackground: UIColor? {
         didSet {
             self.textField.layer.borderColor = textFieldBackground?.CGColor
@@ -34,9 +23,25 @@ public protocol PRPickerViewDelegate{
         }
     }
     
+    @IBInspectable var arrowBackground: UIColor? {
+        didSet {
+            self.viewArrow.backgroundColor = arrowBackground
+        }
+    }
+    
     @IBInspectable var fakePlaceholder: String? {
         didSet {
             self.textField.placeholder = fakePlaceholder
+        }
+    }
+    
+    var nibName:String = "PRPickerView"
+    var nationalities = ["Chilena", "Peruana", "Colombiana"]
+    public var delegate:PRPickerViewDelegate?
+    public var tapHandler: (Void -> Void)?
+    public var text: String? {
+        didSet {
+            self.textField.text = text
         }
     }
     
