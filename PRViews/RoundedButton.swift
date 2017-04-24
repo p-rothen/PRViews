@@ -22,7 +22,10 @@ public class RoundedButton : UIButton {
     
     func setup() {
         self.layer.cornerRadius = 3
-        self.titleLabel?.font = UIFont.boldSystemFontOfSize(15)
+        //Default font
+        if let fontName = self.titleLabel?.font.fontName where fontName == ".SFUIText" {
+            self.titleLabel?.font = UIFont.boldSystemFontOfSize(15)
+        }
         self.layer.shadowOpacity = 0.4;
         self.layer.shadowRadius = 1;
         self.layer.shadowColor = UIColor.blackColor().CGColor;
